@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "frontend-one": "apps/frontend-one",
-    "frontend-one-e2e": "apps/frontend-one-e2e"
+    "frontend-one-e2e": "apps/frontend-one-e2e",
+    "shared-ui-components": "libs/shared-ui-components"
   }
 }
