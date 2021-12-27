@@ -2,6 +2,7 @@
   "conventionalCommits.scopes": [
     "nx",
     "npm",
-    "component"
+    "component",
+    "lib"
   ]
 }

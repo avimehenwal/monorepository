@@ -1,7 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "component-library": "libs/component-library",
     "design-system": "libs/design-system",
     "frontend-one": "apps/frontend-one",
     "frontend-one-e2e": "apps/frontend-one-e2e"
