@@ -1,6 +1,7 @@
 {
   "conventionalCommits.scopes": [
     "nx",
-    "npm"
+    "npm",
+    "component"
   ]
 }
