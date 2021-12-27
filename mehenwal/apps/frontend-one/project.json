@@ -56,12 +56,6 @@
           "apps/frontend-one/**/*.{ts,tsx,js,jsx}"
         ]
       }
-    },
-    "gh": {
-      "executor": "@nrwl/workspace:run-commands",
-      "options": {
-        "command": "nx build && nx export && rsync -av dist/apps/frontend-one/exported/* ../docs && touch ../docs/.nojekyll"
-      }
     }
   },
   "tags": []

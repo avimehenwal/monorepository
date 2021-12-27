@@ -2,10 +2,6 @@
 
 📚 my mono-repository, built for scale
 
-```
-nx run-many --all --target=build
-```
-
 #### :v: Get in touch with me
 
 > I am looking for Jobs ... :sunglasses:
