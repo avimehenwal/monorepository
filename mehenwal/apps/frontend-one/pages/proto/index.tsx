@@ -1,4 +1,4 @@
-import { Headline } from '@mehenwal/design-system'
+import { Headline, Dot } from '@mehenwal/design-system'
 
 /* eslint-disable-next-line */
 export interface ProtoProps { }
@@ -8,6 +8,7 @@ export function Proto(props: ProtoProps) {
     <div>
       <h1>Welcome to Proto!</h1>
       <Headline />
+      <Dot />
     </div>
   );
 }
