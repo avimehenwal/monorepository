@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mehenwal/component-library": ["libs/component-library/src/index.ts"]
+      "@mehenwal/component-library": ["libs/component-library/src/index.ts"],
+      "@mehenwal/design-system": ["libs/design-system/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,0 +1,8 @@
+{
+  "name": "@mehenwal/design-system",
+  "version": "0.0.3",
+  "scripts": {
+    "pub:dry": "npm publish --dry-run --tag beta",
+    "pub": "npm publish --access public"
+  }
+}
