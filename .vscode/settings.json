@@ -3,6 +3,7 @@
     "nx",
     "npm",
     "component",
-    "lib"
+    "lib",
+    "react"
   ]
 }
