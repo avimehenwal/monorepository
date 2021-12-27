@@ -60,7 +60,7 @@
     "gh": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "command": "rsync -av dist/apps/frontend-one/exported/* ../docs && touch ../docs/.nojekyll"
+        "command": "nx build && nx export && rsync -av dist/apps/frontend-one/exported/* ../docs && touch ../docs/.nojekyll"
       }
     }
   },
