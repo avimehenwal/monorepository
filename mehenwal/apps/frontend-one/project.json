@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/next:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/frontend-one",
@@ -36,7 +38,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/frontend-one"],
+      "outputs": [
+        "coverage/apps/frontend-one"
+      ],
       "options": {
         "jestConfig": "apps/frontend-one/jest.config.js",
         "passWithNoTests": true
@@ -44,9 +48,19 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/frontend-one/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "apps/frontend-one/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "gh": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "rsync -av dist/apps/frontend-one/exported/* ../docs && touch ../docs/.nojekyll"
       }
     }
   },
