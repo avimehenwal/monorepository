@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mehenwal/business-logic": ["libs/business-logic/src/index.ts"],
       "@mehenwal/design-system": ["libs/design-system/src/index.ts"]
     }
   },

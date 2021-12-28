@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "business-logic": "libs/business-logic",
     "design-system": "libs/design-system",
     "design-system-e2e": "apps/design-system-e2e",
     "frontend-one": "apps/frontend-one",

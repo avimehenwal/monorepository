@@ -4,6 +4,7 @@
     "npm",
     "component",
     "lib",
-    "react"
+    "react",
+    "hook"
   ]
 }

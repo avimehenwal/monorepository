@@ -1,0 +1,46 @@
+{
+  "root": "libs/business-logic",
+  "sourceRoot": "libs/business-logic/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/business-logic",
+        "tsConfig": "libs/business-logic/tsconfig.lib.json",
+        "project": "libs/business-logic/package.json",
+        "entryFile": "libs/business-logic/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "swc",
+        "assets": [
+          {
+            "glob": "libs/business-logic/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@angular-devkit/build-angular:tslint",
+      "options": {
+        "tsConfig": [
+          "libs/business-logic/tsconfig.lib.json",
+          "libs/business-logic/tsconfig.spec.json"
+        ],
+        "exclude": ["**/node_modules/**", "!libs/business-logic/**/*"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/business-logic"],
+      "options": {
+        "jestConfig": "libs/business-logic/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
