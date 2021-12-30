@@ -6,6 +6,7 @@
     "lib",
     "react",
     "hook",
-    "next"
+    "next",
+    "content"
   ]
 }
