@@ -1,0 +1,54 @@
+{
+  "root": "apps/business-blog",
+  "sourceRoot": "apps/business-blog",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/business-blog",
+        "outputPath": "dist/apps/business-blog"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "business-blog:build",
+        "dev": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "business-blog:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "business-blog:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/business-blog"],
+      "options": {
+        "jestConfig": "apps/business-blog/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@angular-devkit/build-angular:tslint",
+      "options": {
+        "tsConfig": ["apps/business-blog/tsconfig.app.json"],
+        "exclude": ["**/node_modules/**", "!apps/business-blog/**/*"]
+      }
+    }
+  },
+  "tags": []
+}

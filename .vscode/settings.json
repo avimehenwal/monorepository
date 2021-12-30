@@ -5,6 +5,7 @@
     "component",
     "lib",
     "react",
-    "hook"
+    "hook",
+    "next"
   ]
 }

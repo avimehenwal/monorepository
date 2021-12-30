@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "business-blog": "apps/business-blog",
+    "business-blog-e2e": "apps/business-blog-e2e",
     "business-logic": "libs/business-logic",
     "design-system": "libs/design-system",
     "design-system-e2e": "apps/design-system-e2e",
