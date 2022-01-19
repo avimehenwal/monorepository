@@ -2,6 +2,10 @@
 
 📚 my mono-repository, built for scale
 
+## Links
+
+- https://monorepo-blog-g44vk0kke-avimehenwal-evernestcom.vercel.app/
+
 #### :v: Get in touch with me
 
 > I am looking for Jobs ... :sunglasses:
